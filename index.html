@@ -136,9 +136,17 @@
       gap: 18px;
     }
 
-    .project-card { transition: border-color .2s; }
+    .project-card {
+  transition: transform 0.25s ease, border-color 0.25s ease,
+              box-shadow 0.25s ease;
+  overflow: hidden;
+}
 
-    .project-card:hover { border-color: #60a5fa; }
+.project-card:hover {
+  border-color: #60a5fa;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
 
     .project-icon {
       font-size: 28px;
